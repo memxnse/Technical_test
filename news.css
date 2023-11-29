@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html {
+  font-family: Arial;
+  font-size: 16px;
+  background: #000000;
+  color: #999999;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 35%;
+}
+
+.sidebar {
+position: fixed;
+width: 100%;
+height: 100vh;
+top: 0;
+bottom: 0;
+left: 0;
+background: #312450;
+font-size: 1em;
+transition: width 0.5s ease;
+z-index: 9999;
+}
+
+.nav {
+position: relative;
+margin: 0 15%;
+text-align: right;
+top: 50%;
+transform: translateY(-50%);
+font-weight: bold;
+}
+
+.nav p {
+position: relative;
+margin: 3.2em 0;
+}
+
+.nav a {
+line-height: 5em;
+text-transform: uppercase;
+text-decoration: none;
+letter-spacing: 0.4em;
+color: rgba(255, 255, 255, 0.75);
+display: block;
+transition: all ease-out 300ms;
+}
+
+.nav p.active a {
+color: white;
+}
+
+.nav p:not(.active)::after {
+opacity: 0.2;
+}
+
+.nav p::after {
+content: '';
+position: absolute;
+width: 100%;
+height: 0.2em;
+left: 0;
+bottom: 0;
+background-image: linear-gradient(to right, #5e42a6, #b74e91);
+}
+
+.news-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 75px;
+  height: 600px;
+  overflow-y: scroll; 
+}
+
+.news-list::-webkit-scrollbar {
+  width: 2px;
+}
+
+.news-list::-webkit-scrollbar-thumb {
+  background: #999999;
+  border-radius: 6px;
+}
+
+.news-item {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.news-item h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.news-item p {
+  color: #999999;
+  font-size: 14px;
+}
+
+/* Styles for the gradient line at the bottom of each news item */
+.news-item::after {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 0.2em;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, #5e42a6, #b74e91);
+  border-radius: 2px;
+}
