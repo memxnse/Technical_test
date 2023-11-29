@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 3000); // The sidebar will change width after 3 seconds (3000 milliseconds)
 });
 
-let array = []
+// let array = []
 
-async function fetch_competition() {
+// async function fetch_competition() {
   // const url = 'https://football98.p.rapidapi.com/competitions';
   // console.log(url);
   // const options = {
@@ -61,20 +61,20 @@ async function fetch_competition() {
 
 //   }
 
-  const url = 'https://api-nba-v1.p.rapidapi.com/leagues';
-  const options = {
-    method: 'GET',
-    headers: {
-      'X-RapidAPI-Key': '2d6f2fa199msh3aeca0e03c58ea8p141364jsn129cec6055bc',
-      'X-RapidAPI-Host': 'api-nba-v1.p.rapidapi.com'
-    }
-  };
+//   const url = 'https://api-nba-v1.p.rapidapi.com/leagues';
+//   const options = {
+//     method: 'GET',
+//     headers: {
+//       'X-RapidAPI-Key': '2d6f2fa199msh3aeca0e03c58ea8p141364jsn129cec6055bc',
+//       'X-RapidAPI-Host': 'api-nba-v1.p.rapidapi.com'
+//     }
+//   };
 
-  try {
-    const response = await fetch(url, options);
-    const result = await response.text();
-    console.log(result);
-  } catch (error) {
-    console.error(error);
-  }
-}
+//   try {
+//     const response = await fetch(url, options);
+//     const result = await response.text();
+//     console.log(result);
+//   } catch (error) {
+//     console.error(error);
+//   }
+// }
