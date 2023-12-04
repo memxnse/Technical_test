@@ -5,7 +5,22 @@
   box-sizing: border-box;
 }
 
-body {
+.logo {
+  font-size: 1.5rem;
+  color: #fff;
+  padding-top: 3.5%;
+  display: grid;
+  place-items: center;
+  background: #000000; /* Added background property */
+  font-family: "Ubuntu Mono", monospace; /* Added font-family property */
+  z-index: 1;
+}
+
+body{
+  background-color: #000000;
+}
+
+.body {
   min-height: 100vh;
   display: grid;
   place-items: center;
@@ -14,24 +29,20 @@ body {
   font-weight: 400;
 }
 
-.logo {
-  font-size: 1.5rem;
-  color: #fff;
-}
-
 .container {
   width: 100%;
   display: flex;
   justify-content: center;
   height: 500px;
   gap: 10px;
+  z-index: 1;
 }
 
 .container > div {
   flex: 0 0 200px;
   border-radius: 0.5rem;
   transition: 0.5s ease-in-out;
-  cursor: pointer;
+  /* cursor: pointer; */
   box-shadow: 1px 5px 15px #1e0e3e;
   position: relative;
   overflow: hidden;
@@ -51,7 +62,7 @@ body {
 }
 
 .container > div:nth-of-type(4) {
-  background: url("images/swimming.jpg") no-repeat 50%/cover;
+  background: url("images/hockey.jpg") no-repeat 50%/cover;
 }
 
 .container > div .content {
@@ -89,6 +100,50 @@ body {
   visibility: visible;
 }
 
+#myfootVideo {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+#mybasketVideo {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+#mytennisVideo {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+#myHockeyVideo {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
 .container a {
   text-decoration: none;
   color: inherit;
@@ -96,4 +151,59 @@ body {
 
 .container a:hover {
   color: inherit;
+}
+
+.footer{
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 3.5rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 80px 13% 70px;
+  background-color: #1e0e3e;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer_content h4{
+  margin-bottom: 1.5rem;
+  font-size: 20px;
+  /* color: #fff; */
+}
+
+.footer_content li{
+  margin-bottom: 16px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer_content li a{
+  display: block;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  transition: all .40s ease;
+}
+
+.footer_content li:hover {
+  transform: translateY(-3px) translateX(-5px);
+  color: #ffffff52;
+  text-decoration: none;
+}
+
+.footer_content h4 a{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  transition: all .40s ease;
+  text-decoration: none;
+}
+
+.footer_content h4 a:hover {
+  transform: translateY(-3px) translateX(-5px);
+  color: #fff;
+  text-decoration: none;
 }

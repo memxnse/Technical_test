@@ -11,35 +11,71 @@
   <div class = "logo">
     <h2>The Event Book</h2>
   </div>
-<div class="container">
-  <div>
-    <a href="news_list.html"> 
-      <div class="content">
-        <h2>Basketball</h2>
+  <section class="body">
+    <div class="container">
+      <div id="basketvid" onmouseover="vid_loader('basketvid', 'mybasketVideo')">
+        <a href="basketball_news_list.html"> 
+          <div class="content">
+            <h2>Basketball</h2>
+          </div>
+        </a>
       </div>
-    </a>
-  </div>
-  <div>
-    <a href="news_list.html"> 
-      <div class="content">
-        <h2>Football</h2>
+      <div id="footvid" onmouseover="vid_loader('footvid', 'myfootVideo')">
+        <a href="football_news_list.html"> 
+          <div class="content">
+            <h2>Football</h2>
+          </div>
+        </a>
       </div>
-    </a>
-  </div>
-  <div>
-    <a href="news_list.html"> 
-      <div class="content">
-        <h2>Tennis</h2>
+      <div id="tennisvid" onmouseover="vid_loader('tennisvid', 'mytennisVideo')">
+        <a href="tennis_news_list.html"> 
+          <div class="content">
+            <h2>Tennis</h2>
+          </div>
+        </a>
       </div>
-    </a>
-  </div>
-  <div>
-    <a href="news_list.html"> 
-      <div class="content">
-        <h2>Swim</h2>
+      <div id="hockeyvid" onmouseover="vid_loader('hockeyvid', 'myHockeyVideo')">
+        <a href="hockey_news_list.html"> 
+          <div class="content">
+            <h2>Hockey</h2>
+          </div>
+        </a>
       </div>
-    </a>
-  </div>
-</div> 
+    </div>
+  </section>
+<!-- Videos -->
+  <video id="mybasketVideo" autoplay muted loop>
+    <source src="images/Baskett.mp4" type="video/mp4" />
+  </video>
+  <video id="myfootVideo" autoplay muted loop>
+    <source src="images/football.mp4" type="video/mp4" />
+  </video>
+  <video id="mytennisVideo" autoplay muted loop>
+    <source src="images/tennis.mp4" type="video/mp4" />
+  </video>
+  <video id="myHockeyVideo" autoplay muted loop>
+    <source src="images/hockey.mp4" type="video/mp4" />
+  </video>
+<!-- Videos -->
+  <section class="footer">
+    <div class="footer_content">
+      <h2>The Event Book</h2>
+      <li>Keep in touch with your favourite events !</li>
+    </div>
+    <div class="footer_content">
+      <h4>Company</h4>
+      <li>How we work</li>
+    </div>
+    <div class="footer_content">
+      <h4>Help</h4>
+      <li>FAQs</li>
+      <li>About us</li>
+      <li>Contact us</li>
+    </div>
+    <div class="footer_content">
+      <h4>Connect: <a href="#">Instagram</a> <a href="#">Instagram</a></h4>
+    </div>
+  </section>
+  <script src="script.js"></script>
 </body>
 </html>
