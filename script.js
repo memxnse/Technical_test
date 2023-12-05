@@ -1,5 +1,20 @@
+// document.addEventListener("DOMContentLoaded", function () {
+//   const sidebar = document.querySelector('.sidebar');
+
+//   // Get the initial width of the sidebar to be equal to the window width
+//   sidebar.style.width = window.innerWidth + 'px';
+
+//   // Use setTimeout to delay the transition to 25% after 3 seconds
+//   setTimeout(function () {
+//     sidebar.style.transition = 'width 0.5s ease';
+//     sidebar.style.width = '25%';
+//     background: url("images/basketball.jpg") no-repeat 50%/cover;
+//   }, 3000); // The sidebar will change width after 3 seconds (3000 milliseconds)
+// });
+
 document.addEventListener("DOMContentLoaded", function () {
-  const sidebar = document.querySelector('.sidebar');
+  const sidebar = document.querySelector('.sidebarfoot');
+  const navLinks = sidebar.querySelectorAll('.nav a');
 
   // Get the initial width of the sidebar to be equal to the window width
   sidebar.style.width = window.innerWidth + 'px';
@@ -8,6 +23,71 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
     sidebar.style.transition = 'width 0.5s ease';
     sidebar.style.width = '25%';
+    sidebar.style.background = 'url("images/football.jpg") no-repeat 50%/cover';
+
+    navLinks.forEach(function(link) {
+      link.style.color = 'green';
+    });
+  }, 3000); // The sidebar will change width after 3 seconds (3000 milliseconds)
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sidebar = document.querySelector('.sidebarbasket');
+  const navLinks = sidebar.querySelectorAll('.nav a');
+
+  // Get the initial width of the sidebar to be equal to the window width
+  sidebar.style.width = window.innerWidth + 'px';
+
+  // Use setTimeout to delay the transition to 25% after 3 seconds
+  setTimeout(function () {
+    sidebar.style.transition = 'width 0.5s ease';
+    sidebar.style.width = '25%';
+    sidebar.style.background = 'url("images/basketball.jpg") no-repeat 50%/cover';
+    
+    navLinks.forEach(function(link) {
+      link.style.color = '#000';
+    });
+    // <p>404 error: Oops The informations you are seekeing are not available! Don't worry it's out issue</p>
+  }, 3000); // The sidebar will change width after 3 seconds (3000 milliseconds)
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sidebar = document.querySelector('.sidebartennis');
+  const navLinks = sidebar.querySelectorAll('.nav a');
+
+  // Get the initial width of the sidebar to be equal to the window width
+  sidebar.style.width = window.innerWidth + 'px';
+
+  // Use setTimeout to delay the transition to 25% after 3 seconds
+  setTimeout(function () {
+    sidebar.style.transition = 'width 0.5s ease';
+    sidebar.style.width = '25%';
+    sidebar.style.background = 'url("images/tennisball.jpg") no-repeat 50%/cover';
+
+    // Change the color of the links
+    navLinks.forEach(function(link) {
+      link.style.color = '#000';
+    });
+  }, 3000); // The sidebar will change width after 3 seconds (3000 milliseconds)
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sidebar = document.querySelector('.sidebarhockey');
+  const navLinks = sidebar.querySelectorAll('.nav a');
+
+  // Get the initial width of the sidebar to be equal to the window width
+  sidebar.style.width = window.innerWidth + 'px';
+
+  // Use setTimeout to delay the transition to 25% after 3 seconds
+  setTimeout(function () {
+    sidebar.style.transition = 'width 0.5s ease';
+    sidebar.style.width = '25%';
+    sidebar.style.background = 'url("images/hockey.jpg") no-repeat 50%/cover';
+
+    // Change the color of the links
+    navLinks.forEach(function(link) {
+      link.style.color = '#000';
+    });
   }, 3000); // The sidebar will change width after 3 seconds (3000 milliseconds)
 });
 

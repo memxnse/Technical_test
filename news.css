@@ -24,17 +24,56 @@ html {
   place-items: center;
 } */
 
-.sidebar {
-position: fixed;
-width: 100%;
-height: 100vh;
-top: 0;
-bottom: 0;
-left: 0;
-background: #312450;
-font-size: 1em;
-transition: width 0.5s ease;
-z-index: 9999;
+.sidebarfoot {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #312450;
+  font-size: 1em;
+  transition: width 0.5s ease;
+  z-index: 9999;
+}
+
+.sidebarbasket {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #312450;
+  font-size: 1em;
+  transition: width 0.5s ease;
+  z-index: 9999;
+}
+
+.sidebartennis{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #312450;
+  font-size: 1em;
+  transition: width 0.5s ease;
+  z-index: 9999;
+}
+
+.sidebarhockey{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #312450;
+  font-size: 1em;
+  transition: width 0.5s ease;
+  z-index: 9999;
 }
 
 .nav {
