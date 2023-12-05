@@ -167,11 +167,12 @@ body{
   text-decoration: none;
   color: #fff;
 }
+.cp-text{ color: #fff; text-shadow: 0 1px rgba(255, 255, 255, 0.1);   display: grid;
+  place-items: center; background-color: #1e0e3e;}
 
 .footer_content h4{
   margin-bottom: 1.5rem;
   font-size: 20px;
-  /* color: #fff; */
 }
 
 .footer_content li{
@@ -190,7 +191,7 @@ body{
 
 .footer_content li:hover {
   transform: translateY(-3px) translateX(-5px);
-  color: #ffffff52;
+  color: #fff;
   text-decoration: none;
 }
 
